@@ -724,7 +724,8 @@ h1 {
 }
 
 h1:hover {
-    background-color: white;
+    background-color: rgb(228, 225, 225);
+    color:#0c0c0c
 }
 
 .intro--banner::before {

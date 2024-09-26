@@ -313,7 +313,10 @@ body {
     -webkit-box-align: center;
     -webkit-align-items: center;
     -ms-flex-align: center;
-    align-items: center
+    align-items: center;
+    transition: all 0.1s ease;
+    cursor: pointer;
+    
 }
 
 .l-side-nav::before {
@@ -343,7 +346,9 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
+    justify-content: ;
     list-style: none
+    
 }
 
 .l-section {
@@ -1777,11 +1782,13 @@ body {
     visibility: hidden;
     -webkit-transition: visibility 0s .2s;
     transition: visibility 0s .2s;
-    background-color: #302f2f;
+    background-color: #0c0c0c;
     border-radius: 15px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 5px 5px 15px rgba(97, 96, 96, 0.3);
     padding: 20px;
     max-width: 600px;
+    transition: all 0.1s ease;
+    cursor: pointer;
   }
 
   .outer-nav.is-vis {
@@ -1808,7 +1815,8 @@ body {
     transform-style: preserve-3d;
     -webkit-transform: translateX(350px) translateZ(-1000px);
     transform: translateX(350px) translateZ(-1000px);
-    font-size: 55px;
+    font-size: 40px;
+    font-family:'Tourney';
     font-weight: 900;
     opacity: 0;
     cursor: pointer;
