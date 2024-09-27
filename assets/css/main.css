@@ -722,6 +722,7 @@ h1 {
     padding: 0rem clamp(1rem, 2vw, 3rem);
     border-radius: clamp(0.4rem, 0.75vw, 1rem);
     overflow: hidden;
+
 }
 
 h1:hover {
@@ -730,6 +731,7 @@ h1:hover {
 }
 .text-cont{
     max-width: 550px;
+    
 }
 .intro--banner::before {
     content: "";
@@ -1784,7 +1786,7 @@ h1:hover {
     left: 55%;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
-    -webkit-transform-style: preserve-3d;
+    -webkit-transform: translateY(-50%);
     transform-style: preserve-3d;
     margin: 0;
     padding: 0;
@@ -1832,7 +1834,7 @@ h1:hover {
     /* Padding for each item */
     border-radius: 10px;
     /* Curved edges for items */
-    transition: opacity .2s, -webkit-transform .2s;
+    transition: opacity .2s, transform .2s, background-color .2s;
     transition: transform .2s, opacity .2s;
     transition: transform .2s, opacity .2s, -webkit-transform .2s;
 }
@@ -1842,7 +1844,7 @@ h1:hover {
     transform: translateX(0) translateZ(0);
     opacity: 1;
     -webkit-transition: opacity .4s, -webkit-transform .4s;
-    transition: opacity .4s, -webkit-transform .4s;
+    transition: opacity .4s, transform .4s;
     transition: transform .4s, opacity .4s;
     transition: transform .4s, opacity .4s, -webkit-transform .4s;
 }
@@ -1880,7 +1882,6 @@ h1:hover {
 .outer-nav>li.is-active::before {
     opacity: 0;
 }
-
 @media (max-width: 767px) {
     .outer-nav>li {
         font-size: 44px;
