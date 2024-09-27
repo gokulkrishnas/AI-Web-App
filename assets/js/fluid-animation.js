@@ -48,7 +48,7 @@ pointers.push(new pointerPrototype());
 
 const { gl, ext } = getWebGLContext(canvas);
 
-startGUI();
+
 
 function getWebGLContext(canvas) {
   const params = {
