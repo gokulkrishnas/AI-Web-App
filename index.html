@@ -13,19 +13,23 @@
   <link href='https://fonts.googleapis.com/css?family=Tourney' rel='stylesheet'>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.9/dat.gui.min.js"></script>
   <script>
-    const name=window.location.href;
-    const domain=window.location.hostname;
+    const name = window.location.href;
+    const domain = window.location.hostname;
 
-    if (domain.includes("gokulkrishnas")) {
-      const mailID = "gokulkrishna30082001@gmail.com"
+    mailID = document.getElementById("mailID")
+
+    console.log("domain", domain)
+
+    if (domain.includes("localhost")) {
+      Mail = "gokulkrishna30082001@gmail.com"
     }
-    else{
-      const mailID = "03hemanthsunil@gmail.com"
-    } 
-   
-    console.log("url:", name);
-    console.log("domain",domain);
-    
+    else {
+      Mail = "03hemanthsunil@gmail.com"
+    }
+
+    console.log("mailID", Mail)
+    mailID.href = Mail
+
   </script>
 
   <script>
@@ -75,18 +79,18 @@
   </a>
   <p class="device-notification--message">Global has so much to offer that we must request you orient your device to portrait or find a larger screen. You won't be disappointed.</p>
 </div> -->
-  
+
   <div class="perspective effect-rotate-left">
     <canvas id="fluid"></canvas>
-    
+
     <div class="container">
-      
+
       <div class="outer-nav--return"></div>
       <div id="viewport" class="l-viewport">
         <div class="l-wrapper">
-          
+
           <header class="header">
-            
+
             <a class="header--logo" href="#0">
               <img src="assets/img/logo.png" alt="AI Web App">
               <p>AI Web App</p>
@@ -240,7 +244,9 @@
                   <div class="modal">
                     <div class="modal--information">
                       <p>Pawia 5, 31-154 Kraków, Poland</p>
-                      <a href="mailto:ouremail@gmail.com"></a>
+                      <a id="mailID">
+                        <script>mailID</script>
+                      </a>
                       <a href="tel:+148126287560">+48 12 628 75 60</a>
                     </div>
                     <ul class="modal--options">
@@ -354,34 +360,34 @@
       </div>
     </div>
 
-    </div>
-    <div class="cat">
-      
-      <div class="ear ear--left"></div>
-      <div class="ear ear--right"></div>
-      <div class="face">
+  </div>
+  <div class="cat">
 
-        <div class="eye eye--left">
-          <div class="eye-pupil"></div>
-        </div>
-        <div class="eye eye--right">
-          <div class="eye-pupil"></div>
-        </div>
-        <div class="muzzle"></div>
+    <div class="ear ear--left"></div>
+    <div class="ear ear--right"></div>
+    <div class="face">
+
+      <div class="eye eye--left">
+        <div class="eye-pupil"></div>
       </div>
+      <div class="eye eye--right">
+        <div class="eye-pupil"></div>
+      </div>
+      <div class="muzzle"></div>
     </div>
+  </div>
 
-    <ul class="outer-nav">
-      <li class="is-active">Home</li>
-      <li>Works</li>
-      <li>About</li>
-      <li>Contact</li>
-      <li>Hire us</li>
-    </ul>
+  <ul class="outer-nav">
+    <li class="is-active">Home</li>
+    <li>Works</li>
+    <li>About</li>
+    <li>Contact</li>
+    <li>Hire us</li>
+  </ul>
 
   </div>
 
-  
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
   <script src="assets/js/functions-min.js"></script>
