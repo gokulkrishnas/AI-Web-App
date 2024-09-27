@@ -344,9 +344,8 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
-    
+
     list-style: none
-    
 }
 
 .l-section {
@@ -730,12 +729,14 @@ h1 {
 
 h1:hover {
     background-color: rgb(228, 225, 225);
-    color:#0c0c0c
+    color: #0c0c0c
 }
-.text-cont{
+
+.text-cont {
     max-width: 550px;
-    
+
 }
+
 .intro--banner::before {
     content: "";
     position: absolute;
@@ -1795,11 +1796,12 @@ h1:hover {
     text-align: center;
     visibility: hidden;
     transition: visibility 0s .2s, transform 0.5s ease;
-    background-color: #9c999909; /* Slightly transparent background */
+    background-color: #9c999909;
+    /* Slightly transparent background */
     border-radius: 15px;
     padding: 20px;
     max-width: 600px;
-    perspective: 1000px; 
+    perspective: 1000px;
     box-shadow: 5px 5px 15px rgba(108, 107, 107, 0.144);
 }
 
@@ -1825,7 +1827,8 @@ h1:hover {
 
 /* Add the tilting effect */
 .outer-nav:hover {
-    transform: translate(-50%, -50%) perspective(1000px) rotateX(30deg) rotateY(30deg) scale(1.05); /* Add scaling */
+    transform: translate(-50%, -50%) perspective(1000px) rotateX(30deg) rotateY(30deg) scale(1.05);
+    /* Add scaling */
 }
 
 .outer-nav>li {
@@ -1840,6 +1843,7 @@ h1:hover {
     border-radius: 10px;
     transition: opacity .2s, transform .2s, background-color .2s;
 }
+
 .outer-nav>li.is-vis {
     transform: translateX(0) translateZ(0);
     opacity: 1;
@@ -1855,7 +1859,8 @@ h1:hover {
 }
 
 .outer-nav:hover::before {
-    opacity: 1; /* Show fog effect on hover */
+    opacity: 1;
+    /* Show fog effect on hover */
 }
 
 /* Active state */
@@ -1872,11 +1877,15 @@ h1:hover {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(255, 255, 255, 0.2); /* Whitish foggy effect */
+    background: rgba(255, 255, 255, 0.2);
+    /* Whitish foggy effect */
     border-radius: 15px;
-    opacity: 0; /* Initially hidden */
-    transition: opacity 0.4s ease; /* Smooth transition */
-    pointer-events: none; /* Prevent interactions */
+    opacity: 0;
+    /* Initially hidden */
+    transition: opacity 0.4s ease;
+    /* Smooth transition */
+    pointer-events: none;
+    /* Prevent interactions */
 }
 
 .outer-nav>li.is-active::before {
@@ -1911,6 +1920,7 @@ h1:hover {
 .outer-nav li.is-vis:nth-child(5) {
     transition-delay: .16s;
 }
+
 .cat {
     position: absolute;
     top: 90%;
@@ -1919,23 +1929,24 @@ h1:hover {
     height: 170px;
     width: calc(170px * 1.13);
     background-color: #00000000;
- 
-  }
-  .cat.is-vis{
+
+}
+
+.cat.is-vis {
     visibility: visible;
 
-  }
-  
-  .ear {
+}
+
+.ear {
     position: absolute;
     top: -30%;
     height: 60%;
     width: 25%;
     background: #ffffff00;
-  }
-  
-  .ear::before,
-  .ear::after {
+}
+
+.ear::before,
+.ear::after {
     content: '';
     position: absolute;
     bottom: 24%;
@@ -1943,60 +1954,60 @@ h1:hover {
     width: 5%;
     border-radius: 50%;
     background: #161616;
-  }
-  
-  .ear::after {
+}
+
+.ear::after {
     transform-origin: 50% 100%;
-  }
-  
-  .ear--left {
+}
+
+.ear--left {
     left: -7%;
     border-radius: 70% 30% 0% 0% / 100% 100% 0% 0%;
     transform: rotate(-15deg);
-  }
-  
-  .ear--left::before,
-  .ear--left::after {
+}
+
+.ear--left::before,
+.ear--left::after {
     right: 10%;
-  }
-  
-  .ear--left::after {
+}
+
+.ear--left::after {
     transform: rotate(-45deg);
-  }
-  
-  .ear--right {
+}
+
+.ear--right {
     right: -7%;
     border-radius: 30% 70% 0% 0% / 100% 100% 0% 0%;
     transform: rotate(15deg);
-  }
-  
-  .ear--right::before,
-  .ear--right::after {
+}
+
+.ear--right::before,
+.ear--right::after {
     left: 10%;
-  }
-  
-  .ear--right::after {
+}
+
+.ear--right::after {
     transform: rotate(45deg);
-  }
-  
-  .face {
+}
+
+.face {
     position: absolute;
     height: 100%;
     width: 100%;
     background: #16161601;
     border-radius: 50%;
-  }
-  
-  .eye {
+}
+
+.eye {
     position: absolute;
     top: 35%;
     height: 30%;
     width: 31%;
     background: #fff;
     border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
-  }
-  
-  .eye::after {
+}
+
+.eye::after {
     content: '';
     position: absolute;
     top: 0;
@@ -2006,30 +2017,35 @@ h1:hover {
     border-radius: 0 0 50% 50% / 0 0 40% 40%;
     background: #161616;
     animation: blink 4s infinite ease-in;
-  }
-  
-  @keyframes blink {
+}
+
+@keyframes blink {
     0% {
-      height: 0;
+        height: 0;
     }
+
     90% {
-      height: 0;
+        height: 0;
     }
+
     92.5% {
-      height: 100%;
+        height: 100%;
     }
+
     95% {
-      height: 0;
+        height: 0;
     }
+
     97.5% {
-      height: 100%;
+        height: 100%;
     }
+
     100% {
-      height: 0;
+        height: 0;
     }
-  }
-  
-  .eye::before {
+}
+
+.eye::before {
     content: '';
     position: absolute;
     top: 60%;
@@ -2037,25 +2053,25 @@ h1:hover {
     width: 15%;
     background: #fff;
     border-radius: 50%;
-  }
-  
-  .eye--left {
+}
+
+.eye--left {
     left: 0;
-  }
-  
-  .eye--left::before {
+}
+
+.eye--left::before {
     right: -5%;
-  }
-  
-  .eye--right {
+}
+
+.eye--right {
     right: 0;
-  }
-  
-  .eye--right::before {
+}
+
+.eye--right::before {
     left: -5%;
-  }
-  
-  .eye-pupil {
+}
+
+.eye-pupil {
     position: absolute;
     top: 25%;
     height: 50%;
@@ -2063,41 +2079,47 @@ h1:hover {
     background: #161616;
     border-radius: 50%;
     animation: look-around 4s infinite;
-  }
-  
-  @keyframes look-around {
+}
+
+@keyframes look-around {
     0% {
-      transform: translate(0);
+        transform: translate(0);
     }
+
     5% {
-      transform: translate(50%, -25%);
+        transform: translate(50%, -25%);
     }
+
     10% {
-      transform: translate(50%, -25%);
+        transform: translate(50%, -25%);
     }
+
     15% {
-      transform: translate(-100%, -25%);
+        transform: translate(-100%, -25%);
     }
+
     20% {
-      transform: translate(-100%, -25%);
+        transform: translate(-100%, -25%);
     }
+
     25% {
-      transform: translate(0, 0);
+        transform: translate(0, 0);
     }
+
     100% {
-      transform: translate(0, 0);
+        transform: translate(0, 0);
     }
-  }
-  
-  .eye--left .eye-pupil {
+}
+
+.eye--left .eye-pupil {
     right: 30%;
-  }
-  
-  .eye--right .eye-pupil {
+}
+
+.eye--right .eye-pupil {
     left: 30%;
-  }
-  
-  .eye-pupil::after {
+}
+
+.eye-pupil::after {
     content: '';
     position: absolute;
     top: 30%;
@@ -2106,9 +2128,9 @@ h1:hover {
     width: 35%;
     border-radius: 50%;
     background: #fff;
-  }
-  
-  .muzzle {
+}
+
+.muzzle {
     position: absolute;
     top: 60%;
     left: 50%;
@@ -2117,5 +2139,9 @@ h1:hover {
     background: #fff;
     transform: translateX(-50%);
     border-radius: 50% 50% 50% 50% / 30% 30% 70% 70%;
-  }
-  
+}
+
+canvas {
+    width: 100vw;
+    height: 200vh;
+}
