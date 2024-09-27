@@ -226,7 +226,7 @@
                   <div class="modal">
                     
                       <div class="modal--information">
-                        <p>Pawia 5, 31-154 Kraków, Poland</p>
+                        <p id="Address">Pawia 5, 31-154 Kraków, Poland</p>
                         
                         <a id="mailID" href=""></a>
 
@@ -378,20 +378,27 @@
   <script>
     
     const mailID = document.getElementById("mailID");
+    const address = document.getElementById("Address");
   
     if (mailID) {
      
       const domain = window.location.hostname;
       let Mail;
+      let Address;
+      let Phonenumber;
       
      
       if (domain.includes("gokulkrishnas")) {
         Mail = "gokulkrishna30082001@gmail.com";
+
       } else {
         Mail = "03hemanthsunil@gmail.com";
+        Address="Hemantham(H),Kochangadi(PO),N Parvur,Kerala,India"
+        Phonenumber="+91 7736224711"
       }
   
       mailID.textContent = Mail;
+      address.textContent = Address;
     } else {
       console.error("Element with id 'mailID' not found.");
     }
